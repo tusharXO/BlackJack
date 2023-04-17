@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans','Poppins', sans-serif;
+}
+
+body{
+    background-image: url("table.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-size: 7em;
+    color: goldenrod;
+    font-weight: bold;
+    margin: 20px auto;
+}
+p{
+    font-size: 3em;
+    margin: 30px auto;
+}
+#message-el{
+    font-style: italic;
+    margin-bottom: 50px;
+}
+#start-btn{
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    padding: 10px;
+    background-color: goldenrod;
+    color: #016f32;
+}
