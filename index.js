@@ -6,8 +6,18 @@ let isAlive = true
 let messageEl = document.getElementById("message-el")
 let message
 let sumEl = document.getElementById("sum-el")
+let cardEl = document.querySelector("#card-el")
+
+
 function startGame(){
-    sumEl.textContent +=" " + sum
+    renderGame()
+}
+
+function renderGame(){
+
+    cardEl.textContent = "Cards: " + firstCard + " " + secondCard 
+
+    sumEl.textContent ="Sum: " + sum
 
     if(sum < 21){
         message = "Do you want to draw another card"
@@ -20,4 +30,11 @@ function startGame(){
         isAlive = false
     }
     messageEl.textContent = message
+}
+
+function newcard(){
+    let newCard = 4
+    cardEl.textContent = "Cards: " + firstCard + " " + secondCard + " " + newCard
+    sum += newCard
+    renderGame() 
 }

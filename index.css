@@ -24,7 +24,7 @@ p{
     font-style: italic;
     margin-bottom: 50px;
 }
-#start-btn{
+#start-btn,#newcard{
     font-size: 1em;
     font-weight: bold;
     border: none;
@@ -33,4 +33,6 @@ p{
     padding: 10px;
     background-color: goldenrod;
     color: #016f32;
+    margin-bottom: 10px;
 }
+
