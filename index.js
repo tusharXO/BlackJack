@@ -13,8 +13,6 @@ let cardEl = document.querySelector("#card-el")
 let playerEl = document.querySelector("#player-el")
 
 
-playerEl.textContent = player.name + ": $" + player.chips
-
 function getRandomCard(){
     let randomNumber = Math.floor(Math.random() * 13) + 1
     if(randomNumber === 1){
@@ -36,6 +34,8 @@ function startGame(){
 }
 
 function renderGame(){
+
+    playerEl.textContent = player.name + ": $" + player.chips
 
     cardEl.textContent = "Cards: "
     for(let i = 0; i < card.length; i++){
